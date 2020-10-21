@@ -2,7 +2,7 @@
 <Configuration status="WARN">
 
     <Properties>
-        <Property name="basePath">.</Property>
+        <Property name="basePath">logs/</Property>
     </Properties>
 
     <Appenders>
@@ -27,7 +27,7 @@
             <DefaultRolloverStrategy max="5" />
         </RollingFile>
 
-        <File name="FileAppender" fileName="${basePath}/myapp.log">
+        <File name="jsonFileAppender" fileName="${basePath}/log4filebeat.log">
             <JSONLayout compact="true" eventEol="true">
                 <KeyValuePair key="@timestamp" value="$${date:yyyy-MM-dd'T'HH:mm:ss.SSSZ}" />
             </JSONLayout>
@@ -39,7 +39,7 @@
         <Root level="trace">
             <AppenderRef ref="console" level="INFO"/>
             <AppenderRef ref="rollingFile" level="DEBUG"/>
-            <AppenderRef ref="FileAppender" level="TRACE"/>
+            <AppenderRef ref="jsonFileAppender" level="TRACE"/>
         </Root>
     </Loggers>
 
