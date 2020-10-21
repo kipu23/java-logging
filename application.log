@@ -1,0 +1,35 @@
+2020-10-14 14:32:54 DEBUG This is a debug message!
+2020-10-14 14:32:54 INFO  This is info message!
+2020-10-14 14:32:54 WARN  This is a warn message!
+2020-10-14 14:32:54 ERROR This is error message!
+2020-10-14 14:36:43 TRACE This is a trace message!
+2020-10-14 14:36:43 DEBUG This is a debug message!
+2020-10-14 14:36:43 INFO  This is info message!
+2020-10-14 14:36:43 WARN  This is a warn message!
+2020-10-14 14:36:43 ERROR This is error message!
+2020-10-14 15:44:40 INFO  my ip address is: 1.1.1.59
+2020-10-14 15:44:40 DEBUG This is a debug message!
+2020-10-14 15:44:40 INFO  This is info message!
+2020-10-14 15:44:40 WARN  This is a warn message!
+2020-10-14 15:44:40 ERROR This is error message!
+2020-10-14 15:47:35 INFO  my ip address is: 84.0.100.151
+2020-10-14 15:47:35 DEBUG This is a debug message!
+2020-10-14 15:47:35 INFO  This is info message!
+2020-10-14 15:47:35 WARN  This is a warn message!
+2020-10-14 15:47:35 ERROR This is error message!
+2020-10-20 14:54:04 DEBUG This is a debug message with parameter.!
+2020-10-20 14:54:04 INFO  This is an info message with parameter.!
+2020-10-20 14:54:04 WARN  This is a warn message with parameter.!
+2020-10-20 14:54:04 ERROR This is an error message with parameter.!
+2020-10-20 18:07:25 DEBUG This is a debug message with parameter.!
+2020-10-20 18:07:25 INFO  This is an info message with parameter.!
+2020-10-20 18:07:25 WARN  This is a warn message with parameter.!
+2020-10-20 18:07:25 ERROR This is an error message with parameter.!
+2020-10-20 18:08:17 DEBUG This is a debug message with parameter.!
+2020-10-20 18:08:17 INFO  This is an info message with parameter.!
+2020-10-20 18:08:17 WARN  This is a warn message with parameter.!
+2020-10-20 18:08:17 ERROR This is an error message with parameter.!
+2020-10-20 18:29:29 DEBUG This is a debug message with parameter.!
+2020-10-20 18:29:29 INFO  This is an info message with parameter.!
+2020-10-20 18:29:29 WARN  This is a warn message with parameter.!
+2020-10-20 18:29:29 ERROR This is an error message with parameter.!

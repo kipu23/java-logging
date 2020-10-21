@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Properties>
+        <Property name="basePath">.</Property>
+    </Properties>
+
+    <Appenders>
+
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</Pattern>
+            </PatternLayout>
+        </Console>
+
+        <RollingFile
+                name="rollingFile"
+                fileName="${basePath}/application.log"
+                filePattern="application.%i.log.gz"
+                ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="5" />
+        </RollingFile>
+
+        <File name="FileAppender" fileName="${basePath}/myapp.log">
+            <JSONLayout compact="true" eventEol="true">
+                <KeyValuePair key="@timestamp" value="$${date:yyyy-MM-dd'T'HH:mm:ss.SSSZ}" />
+            </JSONLayout>
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="console" level="INFO"/>
+            <AppenderRef ref="rollingFile" level="DEBUG"/>
+            <AppenderRef ref="FileAppender" level="TRACE"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
