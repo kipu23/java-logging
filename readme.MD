@@ -80,6 +80,8 @@ With this dependency, we can create a new File appender in the log4j2.xml file:
 
 We need to install and configure filebeat to be able to handle our log file. The filebeat.yml should connain the following lines:
 
+- type: log
+	enabled: true
     paths:
     - C:\logs\java-logging\log4filebeat.log
     
